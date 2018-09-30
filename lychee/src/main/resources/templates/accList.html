@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+	<div id="app">
+		<el-row style="text-align:center;height:100px;background-color: #F0F0F0;padding-left:40px">
+			 <el-col :span="8" style="margin-top:30px"><el-input v-model="keyword" placeholder="请输入内容"></el-input></el-col>
+			 <el-col :span="2"  style="margin-top:30px"><el-button plain>搜索</el-button></el-col>
+		</el-row>
+		<el-row v-if="accList.length>0" style="padding-top:20px">
+       		<el-col :span="3" v-for="acc in accList" :key="o" style="padding-left:40px;"  @click.native="linkToList(2)">
+    			<el-card :body-style="{ padding: '0px' }">
+      				<img :src="acc.round_head_img" class="image" style="-webkit-user-select: none;">
+      				<p>{{acc.nickname}}</p>
+      				<p v-if="acc.service_type == '1'">订阅号</p>
+      				<p v-if="acc.service_type == '2'">服务号</p>
+    			</el-card>
+  			</el-col>
+  		</el-row>
+		<el-row v-if="err_msg == 'err'">
+			<el-col :offset="1">
+       			<p style="margin-top:30px">出现未知错误，请重试</p>
+       		</el-col>
+  		</el-row>
+		<el-row v-if="accList.length>0">
+			<el-col style="padding-left:40px">
+				<el-button-group>
+  					<el-button  icon="el-icon-arrow-left">上一页</el-button>
+  				 	<el-button >共{{total}}条</el-button>
+  					<el-button icon="el-icon-arrow-left">下一页<i class=" el-icon--right"></i></el-button>
+				</el-button-group>
+			</el-col>
+		</el-row>
+		<!-- 列表 -->
+  		<el-dialog title="收货地址" :visible.sync="dialogTableVisible">
+  			<!-- 列表 -->
+		</el-dialog>
+  	</div>
+</body>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script th:inline="javascript">
+    
+	var err_msg = [[${err_msg}]]
+	var accList = [[${list}]]
+	var keyword = [[${keyword}]]
+	var total = [[${total}]]
+    
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+        	keyword:keyword,
+        	dialogTableVisible:false,
+        	accList:accList,
+        	err_msg:err_msg,
+        	total:total
+        }
+      },
+      methods: {
+    	  linkToList(index) {
+    		//this.dialogTableVisible = true;
+    		//请求ajax
+    		
+	      }
+	  }
+    })
+  </script>
+</html>

@@ -1,0 +1,79 @@
+{
+	"base_resp": {
+		"ret": 0,
+		"err_msg": "ok"
+	},
+	"list": [
+		{
+			"fakeid": "MTg0MzMwODA0MQ==",
+			"nickname": "丁香园",
+			"alias": "dingxiangwang",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz\/NzKkzoeG5s20xX0rIia5YkicCO6u8XVtknOBh2rUqCIv0O0ylW7dDU0Vn204AtysA5tBSGoN07icq9NoiclooYawrg\/0?wx_fmt=png",
+			"service_type": 0
+		},
+		{
+			"fakeid": "MzIzNTA1NzkwNw==",
+			"nickname": "丁香园Forward",
+			"alias": "DXYForward",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz\/r1CtHiaZfz9LIMQ1ribhtrQp2sAicyKuAEib9DEJBdxdZibx1J03uAcrMAXAKriaIHIqCGiaHnZUmzVOk3Znj4K0BO1IQ\/0?wx_fmt=png",
+			"service_type": 1
+		},
+		{
+			"fakeid": "MzAwNjAwMDM1Nw==",
+			"nickname": "丁香园会员服务",
+			"alias": "dxy-service",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz\/wotp23J4T4Y6YvibSMoMlOrb76NEpv6jQuJPzsAao5LPJpicVtszvhNDbQA1YChkWmtV4HiciabvKt0dym6Oa34rCw\/0",
+			"service_type": 2
+		},
+		{
+			"fakeid": "MzI1MDc1MDYxOA==",
+			"nickname": "丁香园测试服务号",
+			"alias": "",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz_png\/9Bv9AXGXU0q1qsSrhlAZia1wI8MBuAk6DLqnQq3OicpYhwqptBhHYCQblf1f58HmznGKvxeaGCFZZUaqRh3OkVtQ\/0?wx_fmt=png",
+			"service_type": 2
+		},
+		{
+			"fakeid": "MzA3MzMzODMyNA==",
+			"nickname": "丁香园非常帅",
+			"alias": "yuhuanshuai",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz\/efpO6WjmLAr4WaImrpWia36wBXFk9u9oicAquP0ib7xRDIZUojJvcICAqhia8VWmr0HgvU9hwoicnR82gQQC8WZ6bQw\/0",
+			"service_type": 1
+		},
+		{
+			"fakeid": "MzUyMDY0OTg3Nw==",
+			"nickname": "丁香园大数据",
+			"alias": "DXYbigdata",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz_png\/ATU4OuicVx2icYXcibhDRJnRjmUnFUGKiag0As9sVb0saCdJIBIYZGXEWFjia1lQR20ecKSu62ME4xJt4hpDaRQJZMg\/0?wx_fmt=png",
+			"service_type": 1
+		},
+		{
+			"fakeid": "MzIzMjc3ODUxNQ==",
+			"nickname": "检验丁香园",
+			"alias": "",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz_png\/g6SYKndr7SLicrfOGvOI5Biaj6l2fvzH0eTpOWMDscsvOFiaKJC4CyRs1jHJmuStob6ItgibAPe4gzlRFkdnibGic6pw\/0?wx_fmt=png",
+			"service_type": 1
+		},
+		{
+			"fakeid": "MzIwNjM1NjAzOA==",
+			"nickname": "丁香园大健康",
+			"alias": "dxy-sx",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz_png\/wxbfNrwCtD6qKribElaADybjY0MjsWoOIbyGSt6kHybeLV1P7BKdSpicZdicDAYMrSlU3CSINkhMQ4wgusjxzKFuw\/0?wx_fmt=png",
+			"service_type": 2
+		},
+		{
+			"fakeid": "MzU1MjM1MzM2Nw==",
+			"nickname": "我的丁香园",
+			"alias": "Garden_Phania",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz_png\/r5wMDeWtPHj3ibNvhz1jQqLBPODMeyA4G9GaudYVEqPd5d7ewrK0t2XUlvKgJlxhNSaibBJ9iaeLIb4sPF8SDaQ6g\/0?wx_fmt=png",
+			"service_type": 1
+		},
+		{
+			"fakeid": "MzA3MTA1NjA3MQ==",
+			"nickname": "丁香园四叶虫",
+			"alias": "dxysyc",
+			"round_head_img": "http:\/\/mmbiz.qpic.cn\/mmbiz\/ef8r3rPWkrQLR2tLF7OiaicrA7bFoaqnxOMlJe9G87Rxx2ZCa7YqciaLmwoHuAUSlexk0km0Zgxt4T3YqDhdnCdvg\/0",
+			"service_type": 1
+		}
+	],
+	"total": 89
+}

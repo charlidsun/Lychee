@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+	<div id="app">
+		<el-row style="text-align:center;margin-top:220px">
+			<p style="font-size: 40px">微信公众号搜索工具</p>
+		</el-row>
+		<el-row style="text-align:center;">
+			<el-input v-model="search_key" placeholder="请输入内容" style="width:70%"></el-input>
+		</el-row>
+		<el-row style="text-align:center;margin-top:20px">
+			<el-button plain style="width:120px;margin-right:20px"  @click="searchAccount">搜索</el-button>
+			<el-button plain style="width:120px;margin-left:20px">{{luck_key}}</el-button>
+		</el-row>
+  	</div>
+</body>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+        	luck_key:'工具',
+        	search_key:'',
+        }
+      },
+      methods: {
+	      searchAccount() {
+	    	var that = this;
+	       	if (that.search_key.length == 0){
+	       		alert("请输入查询的内容")
+	       	}else{
+	       		//将请求值传递给后台
+	    		document.write("<form action='/searchAccount' method='post' name='form1' style='display:none'>");  
+	    		document.write("<input type='hidden' name='keyword' value="+that.search_key+">");  
+	    		document.write("<input type='hidden' name='start' value='0'>");  
+	    		document.write("<input type='hidden' name='length' value='24'>");  
+	    		document.write("</form>");  
+	    		document.form1.submit();  
+	       	}
+	      }
+	  }
+    })
+  </script>
+</html>
